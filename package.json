@@ -38,6 +38,7 @@
     "yup": "^1.6.1"
   },
   "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.16.0",
     "@types/node": "^20",
     "@types/numeral": "^2.0.5",
     "@types/react": "^19",
