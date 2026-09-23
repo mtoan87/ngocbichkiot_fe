@@ -684,7 +684,7 @@ const CustomizeTable: React.FC<CTbaleProps> = ({
           <TableCell key={`skeleton-${column.id}-${index}`}>
             <LoadingSkeleton
               variant="rectangular"
-              width={Math.random() * 100 + 80}
+              width={80 + ((index + column.id.toString().length) % 6) * 20}
               height={20}
             />
           </TableCell>

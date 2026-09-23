@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const axiosFileClient = axios.create({
-  baseURL: "https://api.tannongphat.vn/api",
+  baseURL: "http://ngocbichkiot.runasp.net/api",
   responseType: "blob", // 👈 Required for Excel
   headers: {
     "Content-Type": "application/json",
