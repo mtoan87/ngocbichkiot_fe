@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const axiosClient = axios.create({
-  baseURL: "http://ngocbichkiot.runasp.net/api",
+  baseURL: "/api-proxy",
   headers: {
     "Content-Type": "application/json",
     "Access-Control-Allow-Methods": "*",
@@ -44,7 +44,7 @@ axiosClient.interceptors.response.use(
               refreshToken: userData.tokenModel.refreshToken,
               accessToken: userData.tokenModel.accessToken,
             },
-            { baseURL: "http://ngocbichkiot.runasp.net/api" }
+            { baseURL: "/api-proxy" }
           );
 
           const newToken = res?.data?.accessToken;
